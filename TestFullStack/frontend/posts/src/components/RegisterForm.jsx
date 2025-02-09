@@ -18,7 +18,8 @@ const RegistrationForm = () => {
     const [loading, setLoading] = useState(false);
 
     const [formData, setFormData] = useState({
-        username: '',
+        firstName: "",
+        lastName: "",
         email: '',
         password: '',
         confirmPassword: '',
@@ -90,7 +91,7 @@ const RegistrationForm = () => {
                             type="text"
                             id="username"
                             name="username"
-                            value={formData.username}
+                            value={formData.first_name}
                             onChange={handleChange}
                             required
                             placeholder="Your first name"
@@ -104,7 +105,7 @@ const RegistrationForm = () => {
                             type="text"
                             id="username"
                             name="username"
-                            value={formData.username}
+                            value={formData.last_name}
                             onChange={handleChange}
                             required
                             placeholder="Your last name"
